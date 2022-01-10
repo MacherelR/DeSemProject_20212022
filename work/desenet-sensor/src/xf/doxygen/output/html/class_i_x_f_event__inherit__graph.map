@@ -1,0 +1,8 @@
+<map id="IXFEvent" name="IXFEvent">
+<area shape="rect" id="node1" title=" " alt="" coords="272,5,408,229"/>
+<area shape="rect" id="node2" href="$class_initial_event.html" title=" " alt="" coords="5,292,120,384"/>
+<area shape="rect" id="node3" href="$class_x_f_event.html" title=" " alt="" coords="144,292,243,384"/>
+<area shape="rect" id="node4" href="$class_x_f_null_transition.html" title=" " alt="" coords="267,292,413,384"/>
+<area shape="rect" id="node5" href="$class_x_f_static_event.html" title=" " alt="" coords="437,292,568,384"/>
+<area shape="rect" id="node6" href="$class_x_f_timeout.html" title=" " alt="" coords="592,277,707,399"/>
+</map>

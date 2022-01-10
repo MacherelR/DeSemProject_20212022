@@ -1,0 +1,16 @@
+paint.cpp:8:1:ep::Paint::Paint()	16	static
+paint.cpp:12:6:void ep::Paint::initialize(ep::Display*)	16	static
+paint.cpp:25:6:void ep::Paint::setBuffer(uint8_t*, uint16_t, uint16_t, uint16_t, uint16_t)	24	static
+paint.cpp:64:6:void ep::Paint::setRotate(ep::Rotation)	16	static
+paint.cpp:77:6:void ep::Paint::setMirroring(uint8_t)	16	static
+paint.cpp:93:6:void ep::Paint::setPixel(uint16_t, uint16_t, uint16_t, bool)	40	static
+paint.cpp:167:6:void ep::Paint::clear(uint8_t, bool)	16	static
+paint.cpp:185:6:void ep::Paint::clearWindows(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t)	40	static
+paint.cpp:198:6:void ep::Paint::update()	16	static
+paint.cpp:212:6:void ep::Paint::drawPoint(uint16_t, uint16_t, uint16_t, DOT_PIXEL, DOT_STYLE, bool)	40	static
+paint.cpp:260:6:void ep::Paint::drawLine(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, LINE_STYLE, DOT_PIXEL, bool)	72	static
+paint.cpp:333:6:void ep::Paint::drawRectangle(uint16_t, uint16_t, uint16_t, uint16_t, uint16_t, DRAW_FILL, DOT_PIXEL, bool)	56	static
+paint.cpp:375:6:void ep::Paint::drawCircle(uint16_t, uint16_t, uint16_t, uint16_t, DRAW_FILL, DOT_PIXEL, bool)	48	static
+paint.cpp:457:6:void ep::Paint::drawChar(uint16_t, uint16_t, char, sFONT*, uint16_t, uint16_t, bool)	48	static
+paint.cpp:518:6:void ep::Paint::drawString(uint16_t, uint16_t, const char*, sFONT*, uint16_t, uint16_t, bool)	48	static
+paint.cpp:567:6:void ep::Paint::drawBitmap(const uint8_t*)	16	static

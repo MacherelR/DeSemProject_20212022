@@ -1,0 +1,40 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+itimeslotmanager.h:48:11:ITimeSlotManager::ITimeSlotManager()	16	static
+itimeslotmanager.h:49:10:ITimeSlotManager::~ITimeSlotManager()	16	static
+itimeslotmanager.h:49:10:virtual ITimeSlotManager::~ITimeSlotManager()	16	static
+ixfevent.h:48:23:IXFEvent::eEventType IXFEvent::getEventType() const	16	static
+ixfevent.h:61:16:int IXFEvent::getId() const	16	static
+xfeventstatus.h:32:5:EventStatus::EventStatus(EventStatus::eEventStatus)	16	static
+timeslotmanager.h:28:27:static desenet::TimeSlotManager& desenet::TimeSlotManager::instance()	8	static
+timeslotmanager.cpp:22:1:desenet::TimeSlotManager::TimeSlotManager()	16	static
+timeslotmanager.cpp:36:1:desenet::TimeSlotManager::~TimeSlotManager()	16	static
+timeslotmanager.cpp:36:1:virtual desenet::TimeSlotManager::~TimeSlotManager()	16	static
+timeslotmanager.cpp:41:6:virtual void desenet::TimeSlotManager::initialize(const SlotNumber&)	16	static
+timeslotmanager.cpp:70:6:virtual void desenet::TimeSlotManager::initializeRelations(const ITimeSlotManager::Observer&)	16	static
+timeslotmanager.cpp:75:6:virtual bool desenet::TimeSlotManager::setObserver(const ITimeSlotManager::Observer&)	16	static
+timeslotmanager.cpp:85:6:virtual void desenet::TimeSlotManager::start()	16	static
+timeslotmanager.cpp:98:6:virtual void desenet::TimeSlotManager::onBeaconReceived(const SlotDuration&)	24	static
+timeslotmanager.cpp:120:6:static void desenet::TimeSlotManager::onIrq()	8	static
+timeslotmanager.cpp:125:6:void desenet::TimeSlotManager::notify(const ITimeSlotManager::SIG&)	16	static
+timeslotmanager.cpp:134:6:void desenet::TimeSlotManager::_startTimer()	16	static
+timeslotmanager.cpp:144:6:void desenet::TimeSlotManager::_setSlotDuration(const SlotDuration&)	72	static
+timeslotmanager.cpp:217:6:void desenet::TimeSlotManager::_stopTimer()	16	static
+timeslotmanager.cpp:222:6:void desenet::TimeSlotManager::_processIrq()	24	static
+timeslotmanager.cpp:254:13:virtual EventStatus desenet::TimeSlotManager::processEvent()	24	static
+initializer_list:71:7:constexpr std::initializer_list<_E>::size_type std::initializer_list<_E>::size() const [with _E = unsigned char]	16	static
+address.hpp:47:2:phy::Address<size>::Address(std::initializer_list<unsigned char>) [with unsigned int size = 4]	32	static
+initializer_list:75:7:constexpr const _E* std::initializer_list<_E>::begin() const [with _E = unsigned char]	16	static
+initializer_list:79:7:constexpr const _E* std::initializer_list<_E>::end() const [with _E = unsigned char]	24	static
+stl_algobase.h:465:5:_OI std::copy(_II, _II, _OI) [with _II = const unsigned char*; _OI = unsigned char*]	32	static
+cpp_type_traits.h:428:5:_Iterator std::__miter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:438:5:_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:393:5:_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:295:5:_Iterator std::__niter_wrap(const _Iterator&, _Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:375:2:static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = unsigned char; bool _IsMove = false]	32	static
+timeslotmanager.cpp:292:1:void __static_initialization_and_destruction_0(int, int)	40	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+timeslotmanager.cpp:292:1:cpp)	8	static
+timeslotmanager.cpp:292:1:cpp)	8	static

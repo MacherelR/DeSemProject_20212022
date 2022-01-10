@@ -1,0 +1,37 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+ixfevent.h:48:23:IXFEvent::eEventType IXFEvent::getEventType() const	16	static
+ixfevent.h:61:16:int IXFEvent::getId() const	16	static
+xfeventstatus.h:32:5:EventStatus::EventStatus(EventStatus::eEventStatus)	16	static
+initializer_list:71:7:constexpr std::initializer_list<_E>::size_type std::initializer_list<_E>::size() const [with _E = unsigned char]	16	static
+initializer_list:75:7:constexpr const _E* std::initializer_list<_E>::begin() const [with _E = unsigned char]	16	static
+abstractapplication.h:23:9:desenet::sensor::AbstractApplication::AbstractApplication()	16	static
+abstractapplication.h:24:17:desenet::sensor::AbstractApplication::~AbstractApplication()	16	static
+abstractapplication.h:24:17:virtual desenet::sensor::AbstractApplication::~AbstractApplication()	16	static
+factory.h:39:19:static app::Factory& app::Factory::instance()	8	static
+accelerometerapplication.cpp:9:1:app::AccelerometerApplication::AccelerometerApplication()	16	static
+accelerometerapplication.cpp:15:1:app::AccelerometerApplication::~AccelerometerApplication()	16	static
+accelerometerapplication.cpp:15:1:virtual app::AccelerometerApplication::~AccelerometerApplication()	16	static
+accelerometerapplication.cpp:19:6:void app::AccelerometerApplication::initialize()	16	static
+accelerometerapplication.cpp:27:6:void app::AccelerometerApplication::start()	16	static
+accelerometerapplication.cpp:35:6:virtual void app::AccelerometerApplication::svSyncIndication(desenet::NetworkTime)	16	static
+accelerometerapplication.cpp:47:37:virtual hei::SharedBuffer<unsigned char>::sizeType app::AccelerometerApplication::svPublishIndication(desenet::SvGroup, desenet::SharedByteBuffer&)	24	static
+accelerometerapplication.cpp:60:13:virtual EventStatus app::AccelerometerApplication::processEvent()	24	static
+accelerometerapplication.cpp:102:24:board::Accelerometer& app::AccelerometerApplication::accelerometer()	16	static
+accelerometerapplication.cpp:107:6:void app::AccelerometerApplication::_readAccelerometerValues()	16	static
+address.hpp:47:2:phy::Address<size>::Address(std::initializer_list<unsigned char>) [with unsigned int size = 4]	32	static
+sharedbuffer.hpp:224:19:T& hei::SharedBuffer<T>::operator[](hei::SharedBuffer<T>::sizeType) [with T = unsigned char]	16	static
+initializer_list:79:7:constexpr const _E* std::initializer_list<_E>::end() const [with _E = unsigned char]	24	static
+stl_algobase.h:465:5:_OI std::copy(_II, _II, _OI) [with _II = const unsigned char*; _OI = unsigned char*]	32	static
+shared_ptr_base.h:1309:7:std::__shared_ptr<_Tp, _Lp>::element_type* std::__shared_ptr<_Tp, _Lp>::get() const [with _Tp = unsigned char; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_single]	16	static
+cpp_type_traits.h:428:5:_Iterator std::__miter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:438:5:_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:393:5:_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:295:5:_Iterator std::__niter_wrap(const _Iterator&, _Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:375:2:static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = unsigned char; bool _IsMove = false]	32	static
+accelerometerapplication.cpp:112:1:void __static_initialization_and_destruction_0(int, int)	40	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+accelerometerapplication.cpp:112:1:cpp)	8	static
+accelerometerapplication.cpp:112:1:cpp)	8	static

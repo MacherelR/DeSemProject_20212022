@@ -1,0 +1,2 @@
+gpi.cpp:12:1:ep::Gpi::Gpi(GPIO_TypeDef*, uint32_t)	24	static
+gpi.cpp:22:15:GPIO_PinState ep::Gpi::read()	24	static

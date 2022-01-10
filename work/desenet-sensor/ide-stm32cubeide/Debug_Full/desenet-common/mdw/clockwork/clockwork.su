@@ -1,0 +1,40 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+ixfevent.h:48:23:IXFEvent::eEventType IXFEvent::getEventType() const	16	static
+ixfevent.h:61:16:int IXFEvent::getId() const	16	static
+xftimeoutmanager.h:50:16:int XFTimeoutManager::tickInterval() const	16	static
+xftimeoutmanager.h:51:21:uint32_t XFTimeoutManager::sysTicksInMs() const	16	static
+xfeventstatus.h:32:5:EventStatus::EventStatus(EventStatus::eEventStatus)	16	static
+ttime.h:41:23:unsigned char TTime::hour() const	16	static
+ttime.h:43:23:unsigned char TTime::minute() const	16	static
+ttime.h:45:23:unsigned char TTime::second() const	16	static
+ttime.h:47:24:short unsigned int TTime::msec() const	16	static
+clockwork.cpp:10:1:Clockwork::Clockwork()	16	static
+clockwork.cpp:19:1:Clockwork::~Clockwork()	16	static
+clockwork.cpp:19:1:virtual Clockwork::~Clockwork()	16	static
+clockwork.cpp:23:6:void Clockwork::start()	16	static
+clockwork.cpp:28:15:const TTime& Clockwork::currentTime()	16	static
+clockwork.cpp:35:13:static Clockwork& Clockwork::instance()	8	static
+clockwork.cpp:41:6:void Clockwork::setCurrentTime(unsigned char, unsigned char, unsigned char, short unsigned int)	48	static
+clockwork.cpp:65:6:void Clockwork::setCurrentTime(const TTime&)	32	static
+clockwork.cpp:74:6:void Clockwork::time(unsigned char&, unsigned char&, unsigned char&, short unsigned int&)	24	static
+clockwork.cpp:85:13:virtual EventStatus Clockwork::processEvent()	24	static
+clockwork.cpp:127:6:virtual void Clockwork::doInit()	16	static
+clockwork.cpp:138:6:virtual void Clockwork::doShowCurrentTime()	40	static
+clockwork.cpp:149:6:virtual void Clockwork::doSecondUpdate()	56	static
+initializer_list:71:7:constexpr std::initializer_list<_E>::size_type std::initializer_list<_E>::size() const [with _E = unsigned char]	16	static
+address.hpp:47:2:phy::Address<size>::Address(std::initializer_list<unsigned char>) [with unsigned int size = 4]	32	static
+initializer_list:75:7:constexpr const _E* std::initializer_list<_E>::begin() const [with _E = unsigned char]	16	static
+initializer_list:79:7:constexpr const _E* std::initializer_list<_E>::end() const [with _E = unsigned char]	24	static
+stl_algobase.h:465:5:_OI std::copy(_II, _II, _OI) [with _II = const unsigned char*; _OI = unsigned char*]	32	static
+cpp_type_traits.h:428:5:_Iterator std::__miter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:438:5:_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:393:5:_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:295:5:_Iterator std::__niter_wrap(const _Iterator&, _Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:375:2:static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = unsigned char; bool _IsMove = false]	32	static
+clockwork.cpp:208:1:void __static_initialization_and_destruction_0(int, int)	40	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+clockwork.cpp:208:1:cpp)	8	static
+clockwork.cpp:208:1:cpp)	8	static

@@ -1,0 +1,12 @@
+ledflasher.h:18:10:LedFlasher::~LedFlasher()	16	static
+ledflasher.h:18:10:virtual LedFlasher::~LedFlasher()	16	static
+ledcontroller.cpp:6:1:LedController::LedController()	16	static
+ledcontroller.cpp:13:1:LedController::~LedController()	16	static
+ledcontroller.cpp:13:1:virtual LedController::~LedController()	16	static
+ledcontroller.cpp:21:23:void __tcf_0()	8	static
+ledcontroller.cpp:19:17:static LedController& LedController::instance()	8	static
+ledcontroller.cpp:26:6:bool LedController::initialize()	16	static
+ledcontroller.cpp:36:6:void LedController::start()	16	static
+ledcontroller.cpp:41:6:void LedController::setLed(int, bool)	24	static
+ledcontroller.cpp:60:6:void LedController::flashLed(uint16_t)	16	static
+ledcontroller.cpp:68:23:const LedController& LedController::operator=(const LedController&)	16	static

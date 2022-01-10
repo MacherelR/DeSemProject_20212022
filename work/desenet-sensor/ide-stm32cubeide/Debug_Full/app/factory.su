@@ -1,0 +1,41 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+initializer_list:71:7:constexpr std::initializer_list<_E>::size_type std::initializer_list<_E>::size() const [with _E = unsigned char]	16	static
+initializer_list:75:7:constexpr const _E* std::initializer_list<_E>::begin() const [with _E = unsigned char]	16	static
+imonochromedisplay.h:60:10:IMonochromeDisplay::Point::Point(std::initializer_list<unsigned char>)	32	static
+accelerometer.h:14:2:board::Accelerometer::Accelerometer()	16	static
+accelerometer.h:15:2:board::Accelerometer::~Accelerometer()	16	static
+clockwork.h:20:7:void Clockwork::initialize()	16	static
+factory.h:39:19:static app::Factory& app::Factory::instance()	8	static
+factory.cpp:26:1:app::Factory::Factory(int, char**)	24	static
+factory.cpp:53:6:void app::Factory::buildApplication()	96	static
+factory.cpp:129:42:void __tcf_0()	8	static
+factory.cpp:127:33:app::AccelerometerApplication& app::Factory::accelerometerApplication() const	16	static
+factory.cpp:136:33:void __tcf_1()	8	static
+factory.cpp:134:24:board::Accelerometer& app::Factory::accelerometer() const	16	static
+factory.cpp:143:16:void __tcf_2()	8	static
+factory.cpp:141:7:desenet::sensor::Net& app::Factory::net() const	16	static
+factory.cpp:150:22:void __tcf_3()	8	static
+factory.cpp:148:13:Clockwork& app::Factory::clockwork() const	16	static
+factory.cpp:155:17:LedController& app::Factory::ledController() const	16	static
+factory.cpp:162:37:void __tcf_4()	8	static
+factory.cpp:160:22:app::JoystickApplication& app::Factory::joystickApplication() const	16	static
+factory.cpp:166:18:board::Joystick& app::Factory::joystick() const	16	static
+factory.cpp:174:26:void __tcf_5()	8	static
+factory.cpp:172:17:SimpleDisplay& app::Factory::display()	16	static
+factory.cpp:182:6:void Factory_init(int, char**)	16	static
+factory.cpp:187:6:void Factory_buildApplication()	8	static
+address.hpp:47:2:phy::Address<size>::Address(std::initializer_list<unsigned char>) [with unsigned int size = 4]	32	static
+initializer_list:79:7:constexpr const _E* std::initializer_list<_E>::end() const [with _E = unsigned char]	24	static
+stl_algobase.h:465:5:_OI std::copy(_II, _II, _OI) [with _II = const unsigned char*; _OI = unsigned char*]	32	static
+cpp_type_traits.h:428:5:_Iterator std::__miter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:438:5:_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:393:5:_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:295:5:_Iterator std::__niter_wrap(const _Iterator&, _Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:375:2:static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = unsigned char; bool _IsMove = false]	32	static
+factory.cpp:190:1:void __static_initialization_and_destruction_0(int, int)	40	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+factory.cpp:190:1:cpp)	8	static
+factory.cpp:190:1:cpp)	8	static

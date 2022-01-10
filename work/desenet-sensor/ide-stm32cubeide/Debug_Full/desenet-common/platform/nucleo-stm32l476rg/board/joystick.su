@@ -1,0 +1,40 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+ixfevent.h:48:23:IXFEvent::eEventType IXFEvent::getEventType() const	16	static
+ixfevent.h:61:16:int IXFEvent::getId() const	16	static
+xfeventstatus.h:32:5:EventStatus::EventStatus(EventStatus::eEventStatus)	16	static
+ijoystick.h:20:14:IJoystick::IJoystick()	16	static
+ijoystick.h:21:13:IJoystick::~IJoystick()	16	static
+ijoystick.h:21:13:virtual IJoystick::~IJoystick()	16	static
+joystick.cpp:12:1:board::Joystick::Joystick()	16	static
+joystick.cpp:21:1:board::Joystick::Joystick(const board::Joystick&)	16	static
+joystick.cpp:30:6:virtual bool board::Joystick::initialize()	16	static
+joystick.cpp:41:6:virtual bool board::Joystick::setObserver(IJoystickObserver*)	16	static
+joystick.cpp:48:6:virtual void board::Joystick::start()	16	static
+joystick.cpp:56:18:void __tcf_0()	8	static
+joystick.cpp:54:12:static board::Joystick& board::Joystick::instance()	8	static
+joystick.cpp:61:21:virtual IJoystick::Position board::Joystick::position() const	16	static
+joystick.cpp:66:26:IJoystick::PressedButtons board::Joystick::_readActualPosition() const	24	static
+joystick.cpp:84:13:virtual EventStatus board::Joystick::processEvent()	40	static
+joystick.cpp:138:6:void board::Joystick::doCheckJoystickState()	32	static
+joystick.cpp:187:6:)	16	static
+joystick.cpp:209:44:void __tcf_1()	8	static
+joystick.cpp:207:6:void board::Joystick::onIrq(uint16_t)	16	static
+initializer_list:71:7:constexpr std::initializer_list<_E>::size_type std::initializer_list<_E>::size() const [with _E = unsigned char]	16	static
+address.hpp:47:2:phy::Address<size>::Address(std::initializer_list<unsigned char>) [with unsigned int size = 4]	32	static
+initializer_list:75:7:constexpr const _E* std::initializer_list<_E>::begin() const [with _E = unsigned char]	16	static
+initializer_list:79:7:constexpr const _E* std::initializer_list<_E>::end() const [with _E = unsigned char]	24	static
+stl_algobase.h:465:5:_OI std::copy(_II, _II, _OI) [with _II = const unsigned char*; _OI = unsigned char*]	32	static
+cpp_type_traits.h:428:5:_Iterator std::__miter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:438:5:_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:393:5:_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:295:5:_Iterator std::__niter_wrap(const _Iterator&, _Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:375:2:static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = unsigned char; bool _IsMove = false]	32	static
+joystick.h:18:7:board::Joystick::~Joystick()	16	static
+joystick.h:18:7:virtual board::Joystick::~Joystick()	16	static
+joystick.cpp:215:1:void __static_initialization_and_destruction_0(int, int)	40	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+joystick.cpp:215:1:cpp)	8	static
+joystick.cpp:215:1:cpp)	8	static

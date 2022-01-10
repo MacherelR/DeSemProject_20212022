@@ -1,0 +1,12 @@
+display.cpp:8:1:ep::Display::Display()	16	static
+display.cpp:25:6:void ep::Display::initialize(SPI_HandleTypeDef*, ep::Gpo*, ep::Gpi*, ep::Gpo*)	24	static
+display.cpp:42:11:static ep::Display* ep::Display::instance()	4	static
+display.cpp:52:6:void ep::Display::SPI_Write(unsigned char)	16	static
+display.cpp:62:6:void ep::Display::writeCMD(uint8_t)	16	static
+display.cpp:73:6:void ep::Display::writeDATA(uint8_t)	16	static
+display.cpp:82:6:void ep::Display::init()	32	static
+display.cpp:153:6:void ep::Display::setLUTLongRefresh()	24	static
+display.cpp:160:6:void ep::Display::setLUTShortRefresh()	24	static
+display.cpp:170:6:void ep::Display::initReset()	16	static
+display.cpp:181:6:void ep::Display::lcdChkstatus()	24	static
+display.cpp:196:6:void ep::Display::display(uint8_t*)	24	static

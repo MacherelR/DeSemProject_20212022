@@ -1,0 +1,35 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+imonochromedisplay.h:59:19:IMonochromeDisplay::Point::Point(int, int)	24	static
+initializer_list:71:7:constexpr std::initializer_list<_E>::size_type std::initializer_list<_E>::size() const [with _E = unsigned char]	16	static
+initializer_list:75:7:constexpr const _E* std::initializer_list<_E>::begin() const [with _E = unsigned char]	16	static
+imonochromedisplay.h:85:19:IMonochromeDisplay::Size::Size(int, int)	24	static
+imonochromedisplay.h:189:15:virtual void IMonochromeDisplay::writeDisplayMemory(size_t, const uint8_t*, size_t)	24	static
+imonochromedisplay.h:206:15:virtual void IMonochromeDisplay::readDisplayMemory(size_t, uint8_t*, size_t)	24	static
+imonochromedisplay.h:232:15:virtual void IMonochromeDisplay::drawRectangle(const IMonochromeDisplay::Point&, const IMonochromeDisplay::Size&, IMonochromeDisplay::PixelColor)	24	static
+imonochromedisplay.h:245:15:virtual void IMonochromeDisplay::fillRectangle(const IMonochromeDisplay::Point&, const IMonochromeDisplay::Size&, IMonochromeDisplay::PixelColor)	24	static
+imonochromedisplay.h:258:15:virtual void IMonochromeDisplay::drawEllipse(const IMonochromeDisplay::Point&, const IMonochromeDisplay::Size&, IMonochromeDisplay::PixelColor)	24	static
+imonochromedisplay.h:271:15:virtual void IMonochromeDisplay::fillEllipse(const IMonochromeDisplay::Point&, const IMonochromeDisplay::Size&, IMonochromeDisplay::PixelColor)	24	static
+simpledisplay.cpp:4:1:SimpleDisplay::SimpleDisplay()	16	static
+simpledisplay.cpp:8:1:SimpleDisplay::~SimpleDisplay()	16	static
+simpledisplay.cpp:8:1:virtual SimpleDisplay::~SimpleDisplay()	16	static
+simpledisplay.cpp:12:6:virtual bool SimpleDisplay::initialize()	16	static
+simpledisplay.cpp:17:6:void SimpleDisplay::clear()	40	static
+simpledisplay.cpp:24:6:void SimpleDisplay::clearRow(uint8_t)	64	static
+simpledisplay.cpp:32:6:void SimpleDisplay::drawText(const char*, uint16_t, uint16_t)	80	static
+simpledisplay.cpp:40:6:void SimpleDisplay::drawLine(const Point&, const Point&)	48	static
+simpledisplay.cpp:48:6:void SimpleDisplay::drawRectangle(const Point&, const Size&, bool)	56	static
+address.hpp:47:2:phy::Address<size>::Address(std::initializer_list<unsigned char>) [with unsigned int size = 4]	32	static
+initializer_list:79:7:constexpr const _E* std::initializer_list<_E>::end() const [with _E = unsigned char]	24	static
+stl_algobase.h:465:5:_OI std::copy(_II, _II, _OI) [with _II = const unsigned char*; _OI = unsigned char*]	32	static
+cpp_type_traits.h:428:5:_Iterator std::__miter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:438:5:_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = const unsigned char*]	16	static
+stl_algobase.h:280:5:_Iterator std::__niter_base(_Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:393:5:_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = false; _II = const unsigned char*; _OI = unsigned char*]	32	static
+stl_algobase.h:295:5:_Iterator std::__niter_wrap(const _Iterator&, _Iterator) [with _Iterator = unsigned char*]	16	static
+stl_algobase.h:375:2:static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = unsigned char; bool _IsMove = false]	32	static
+simpledisplay.cpp:54:1:void __static_initialization_and_destruction_0(int, int)	40	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+address.hpp:56:10:phy::Address<size>::~Address() [with unsigned int size = 4]	16	static
+simpledisplay.cpp:54:1:cpp)	8	static
+simpledisplay.cpp:54:1:cpp)	8	static
