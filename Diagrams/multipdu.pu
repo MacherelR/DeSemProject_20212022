@@ -1,0 +1,53 @@
+@startuml
+title MPDU Frame creation and completion
+
+participant NetworkEntity as ne
+participant "__response:MultiPDU__" as mpdu
+participant "__buffer_:SharedBuffer__" as buf
+participant AbstractApplication as aa
+
+--> ne : beacon arrived
+create mpdu
+ne -> mpdu : create the response
+create buf
+mpdu -> buf : create its buffer
+buf --> mpdu
+mpdu --> ne
+
+ne -> aa : svSyncIndication(time)
+return
+
+loop for each app concerned by groupMask
+ne -> mpdu : sampledValuesInsertionBuffer()
+activate mpdu
+mpdu -> mpdu : <<computes insertion address for sampled values>>
+mpdu -> mpdu : <<creates proxy of buffer_ with insertion address>>
+return insertionBuffer
+deactivate mpdu
+ne -> aa : svPublishIndication(groupMask, insertionBuffer)
+activate aa
+aa -> aa : <<copy its values into the insertionBuffer>>
+return size of data copied
+deactivate aa
+ne -> mpdu : commitSampledValues(groupMask, size)
+activate mpdu
+mpdu -> mpdu : <<fill ePDU header>>
+mpdu -> mpdu : <<update ePDU count>>
+mpdu -> mpdu : <<update frame length>>
+return
+deactivate mpdu
+end loop
+
+loop while exist events in the queue
+ne -> mpdu : addEvent(evFromQueue)
+activate mpdu
+mpdu -> mpdu : <<fill ePDU header>>
+mpdu -> mpdu : <<copy event data>>
+mpdu -> mpdu : <<update ePDU count>>
+mpdu -> mpdu : <<update frame length>>
+return
+deactivate mpdu
+end loop
+
+
+@enduml

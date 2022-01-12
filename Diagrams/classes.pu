@@ -1,0 +1,76 @@
+@startuml
+title Class Diagram 
+hide empty members
+ 
+package XF{
+    interface IXFReactive
+    abstract class XFReactive
+}
+package Platform{
+    class Accelerometer <<singleton>>
+    class Joystick <<singleton>>
+    interface IJoystickObserver 
+}
+package Application{
+    class Factory
+    class AccelerometerApplication{
+        -onPositionChange(position:Position):void <<callback>>
+        -processEvent(ev:XFEvent)
+    }
+    class JoystickApplication{
+        -svSyncIndication(time:NetworkTime):void
+        -svPublishIndication(group:SvGroup, svData:SharedByteBuffer):SharedByteBuffer::sizeType
+    }
+}
+package Sensor::Middleware{
+    abstract class AbstractApplication{
+        #svSyncRequest():void
+        #svPublishRequest(group:SvGroup):bool
+        #evPublishRequest(id:EvId, evData:SharedByteBuffer):void
+        {abstract} -svSyncIndication(time:NetworkTime):void
+        {abstract} -svPublishIndication(group:SvGroup, svData:SharedByteBuffer):SharedByteBuffer::sizeType
+    }
+    class NetworkEntity {
+        #onTimeSlotSignal(timeSlotManager : ITimeSlotManager,  signal:ITimeSlotManager::SIG &):void
+        #svSyncIndication(receptionTime : CycleDuration) : void
+	    #svPublishIndication(groupMask:SvGroupMask, mpdu:MultiPdu) : void
+	    #transferEventsToMPDU(mpdu: MultiPdu):void
+    }
+    class Net 
+}
+package Common::Middleware{
+    interface ITimeSlotManager
+    class NetworkInterfaceDriver
+    abstract class Frame 
+    class MultiPDU
+    class Beacon 
+}
+Factory *-->Joystick
+Factory *-->JoystickApplication
+Factory *-->Accelerometer
+Factory *-->AccelerometerApplication
+
+XFReactive --|> IXFReactive
+AccelerometerApplication --|> XFReactive
+AccelerometerApplication --> Accelerometer
+JoystickApplication --> Joystick
+JoystickApplication..|> IJoystickObserver
+JoystickApplication--|> AbstractApplication
+Joystick ..> JoystickApplication
+Joystick -->IJoystickObserver
+
+AccelerometerApplication --|> AbstractApplication
+AbstractApplication ..> NetworkEntity : <<friend>>
+Net *-->NetworkEntity
+Net *-->ITimeSlotManager
+Net o-->NetworkInterfaceDriver
+NetworkEntity *--> MultiPDU
+NetworkEntity --> Beacon
+ITimeSlotManager ..> NetworkEntity
+NetworkInterfaceDriver ..>NetworkEntity
+
+MultiPDU --|>Frame
+Beacon --|> Frame
+
+
+@enduml

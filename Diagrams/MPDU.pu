@@ -1,0 +1,20 @@
+@startuml
+title MPDU Class
+
+class MPDU{
+    - ePDUCount : int
+    - mBuffer : SharedByteBuffer
+    + MPDU()
+    + getEPDUCount() : uint8_t
+    + commitSv(SvGroup,uint8_t) : void
+    + commitEv(EvId,uint8_t) : void
+    + insertBuffer() : SharedByteBuffer
+    + Reset() : void
+    + setEPDUCount(int) : void
+    + getBuffer() : uint8_t*
+    + getRemainingSpace() : uint8_t
+    + evPDUwrite(SharedByteBuffer) : size_t
+}
+
+
+@enduml
