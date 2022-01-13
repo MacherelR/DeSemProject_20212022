@@ -1,6 +1,7 @@
 @startuml
 title MPDU Class
-
+skinparam classAttributeIconSize 0
+class Frame
 class MPDU{
     - ePDUCount : int
     - mBuffer : SharedByteBuffer
@@ -15,6 +16,7 @@ class MPDU{
     + getRemainingSpace() : uint8_t
     + evPDUwrite(SharedByteBuffer) : size_t
 }
+Frame <|-- MPDU
 
 
 @enduml

@@ -45,6 +45,8 @@
 \usepackage{caption}
 \usepackage{amsmath}
 
+
+
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 \pagestyle{fancy}
@@ -71,6 +73,7 @@
 
 
 \begin{document}
+
 \begin{titlepage}
 % \hspace{0pt}
 % \vfill
@@ -109,5 +112,12 @@ Alors que les classes à compléter sont :
 D'autres fichiers ont cependant également été modifiés comme par exemple Factory.cpp afin d'y ajouter l'initialisation du Joystick ainsi que le setObserver().\newline
 
 \chapter{Diagrammes UML des classes implémentées}
-
+\section{MPDU}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width= 0.3\textwidth]{Images/MPDU.png}
+    \caption{Diagramme de la classe MPDU}
+    \label{fig:MPDUDiagram}
+\end{figure}
+Comme on peut le voir sur cette figure, la classe MPDU hérite de la classe \textit{Frame}. Ceci va permettre de réutiliser de nombreuses fonctions déjà implémentées dans celle-ci.
 \end{document}
