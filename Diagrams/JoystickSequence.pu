@@ -1,0 +1,40 @@
+@startuml
+title Joystick Detailled Sequence
+
+actor User as u
+participant Factory as f
+participant Joystick as j
+participant JoystickApp as ja
+participant XF as xf
+participant NetworkEntity as ne
+
+
+create ja
+f -> ja : initialize()
+create j
+f -> j : initialize()
+f -> j : setObserver(JoystickApp)
+
+f -> ja : start()
+
+activate ja
+ja -> xf : startBehaviour()
+deactivate ja
+
+xf -> ja : processEvent(InitialEvent)
+activate ja 
+ja -> ja : newState = STATE_WAIT
+deactivate ja
+
+u -> j : << Uses joystick >>
+j -> ja : onPositionChange(position)
+ja -> xf : GEN(XFEvent(EV_POS_CHANGED))
+
+xf -> ja : processEvent(EV_POS_CHANGED)
+ja -> ne : evPublishRequest(id, evData)
+activate ne
+ne -> ne : eventReceived(id, evData)
+ne -> ne : add to evQueue
+deactivate ne
+
+@enduml

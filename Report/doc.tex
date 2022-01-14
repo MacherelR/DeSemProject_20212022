@@ -204,8 +204,23 @@ La machine d'état implémentée pour la classe \textit{JoystickApplication} est
 \begin{figure}[H]
     \centering
     \includegraphics[width= 0.8\textwidth]{Images/SequenceDiagram.png}
-    \caption{Diagramme de séquence de l'application}
+    \caption{Diagramme de séquence générique de l'application}
     \label{fig:SequenceDiagram}
 \end{figure}
 La figure \ref{fig:SequenceDiagram} illustre la séquence appliquée lors de la réception d'un beacon. On peut voir qu'une partie est exécutée de manière asynchrone et n'est pas soumise à un enregistrement pour diverses indications. Il en est ainsi car les valeurs du Joystick sont gérées de manière évènementielle et comme on peut le voir sur le diagramme, lorsque la position du joystick change, la joystickApplication lit la nouvelle valeur puis transmet directement au NetworkEntity qui va stocker l'information dans une queue. C'est seulement au moment ou le NetworkEntity aura terminée de recevoir la sample value qu'il va placer dans le MPDU autant de données d'évènements qu'il y a de place restante dans celui-ci. La partie supérieure du diagramme illustre la synchronisation et la collecte de sample value à chaque réception d'un beacon.
+\section{Diagrammes de séquence détaillés}
+\subsection{Joystick}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width= 0.8\textwidth]{Images/JoystickSequence.png}
+    \caption{Diagramme de séquence détaillé du joystick}
+    \label{fig:JoystickSequence}
+\end{figure}
+\subsubsection{Création et écriture MPDU}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width= 0.8\textwidth]{Images/multipdu.png}
+    \caption{Diagramme de séquence détaillé du MPDU}
+    \label{fig:MPDUSequence}
+\end{figure}
 \end{document}

@@ -1,53 +1,60 @@
 @startuml
-title MPDU Frame creation and completion
+title Creation et ecriture MPDU
 
 participant NetworkEntity as ne
-participant "__response:MultiPDU__" as mpdu
-participant "__buffer_:SharedBuffer__" as buf
+participant "responseMPDU" as mpdu
+participant "buffer" as buf
 participant AbstractApplication as aa
 
---> ne : beacon arrived
+--> ne : beacon reception
 create mpdu
-ne -> mpdu : create the response
+ne -> mpdu : reset()
 create buf
-mpdu -> buf : create its buffer
+mpdu -> buf : reinitialize buffer (Type,EPDUCount,sensorId,etc.)
 buf --> mpdu
-mpdu --> ne
-
-ne -> aa : svSyncIndication(time)
+mpdu --> ne : ready
+loop over all sync registered applications
+ne -> aa : svSyncIndication(beacon.NetworkTime())
 return
+end loop
 
-loop for each app concerned by groupMask
-ne -> mpdu : sampledValuesInsertionBuffer()
+loop over all asked groups by the beacon groupMask
+ne -> mpdu : insertBuffer()
 activate mpdu
-mpdu -> mpdu : <<computes insertion address for sampled values>>
-mpdu -> mpdu : <<creates proxy of buffer_ with insertion address>>
-return insertionBuffer
+mpdu -> mpdu : buffer proxy creation
+return svBuff
 deactivate mpdu
-ne -> aa : svPublishIndication(groupMask, insertionBuffer)
+ne -> aa : publishArray[svGroupIt]->svPublishIndication(svGroupIt, svBuff)
 activate aa
-aa -> aa : <<copy its values into the insertionBuffer>>
-return size of data copied
+aa -> aa : Writes values into svBuff
+return copied size
 deactivate aa
-ne -> mpdu : commitSampledValues(groupMask, size)
+ne -> mpdu : commitSv(svGroupIt, length)
 activate mpdu
-mpdu -> mpdu : <<fill ePDU header>>
-mpdu -> mpdu : <<update ePDU count>>
-mpdu -> mpdu : <<update frame length>>
+mpdu -> mpdu : writes EPDU header
+mpdu -> mpdu : increments EPDU count
+mpdu -> mpdu : update frame buffer length
 return
 deactivate mpdu
 end loop
 
-loop while exist events in the queue
-ne -> mpdu : addEvent(evFromQueue)
+loop while there's enough space remaining in the MPDU frame and evQueue is not empty
+ne -> mpdu : ePDUWrite(evQueue.begin()->data)
 activate mpdu
-mpdu -> mpdu : <<fill ePDU header>>
-mpdu -> mpdu : <<copy event data>>
-mpdu -> mpdu : <<update ePDU count>>
-mpdu -> mpdu : <<update frame length>>
+mpdu -> mpdu : copy data in MPDU frame buffer
+return length
+deactivate mpdu
+ne -> mpdu : commitEv(evQueue.begin()->id,length)
+activate mpdu
+mpdu -> mpdu : writes EPDU header
+mpdu -> mpdu : increments EPDU count
+mpdu -> mpdu : update frame buffer length
 return
 deactivate mpdu
+ne -> ne : evQueue.pop_front() 
 end loop
+--> ne : onTimeSlotSignal()
+<-- ne : transceiver().transmit(responseMPDU.getBuffer(),responseMPDU.length())
 
 
 @enduml
