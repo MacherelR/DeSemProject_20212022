@@ -1,0 +1,25 @@
+@startuml
+title JoystickApplication
+skinparam classAttributeIconSize 0
+class JoystickApplication{
+    + JoystickApplication()
+    + start() : void
+    # currentState : eSmState
+    # joystickData : uint8_t
+    # processEvent() : EventStatus
+    # joystick() : Joystick&
+    # onPositionChanged(IJoystick::Position) : void
+    # _readJoystickValue() : IJoystick::Position
+}
+
+class XFReactive{}
+class AbstractApplication{}
+class IJoystickObserver{}
+
+XFReactive <|-- JoystickApplication
+AbstractApplication <|-- JoystickApplication
+IJoystickObserver <|-- JoystickApplication
+
+
+
+@enduml

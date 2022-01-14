@@ -1,0 +1,6 @@
+@startuml
+[*] --> STATE_INIT
+STATE_INIT -> STATE_WAIT
+STATE_WAIT -> STATE_POSCHANGED
+
+@enduml
