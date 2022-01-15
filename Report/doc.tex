@@ -44,7 +44,7 @@
 \usepackage{enumitem}
 \usepackage{caption}
 \usepackage{amsmath}
-
+\usepackage{longtable}
 
 
 \setcounter{tocdepth}{3}
@@ -93,7 +93,8 @@ Macherel Rémy \hfill Rieder Medard\newline
 \renewcommand{\contentsname}{Table des matières}
 \setcounter{tocdepth}{4}
 \tableofcontents
-
+\listoffigures
+\listoftables
 \chapter{Introduction}
 Dans le cadre du cours MA-DeSem, il nous a été demandé de réaliser le protocole DeseNET sur un système de type STM32 Nucleo. Les spécifications du protocole de communication ont été fournies pour ce travail.\newline
 La structure de base du projet fût fournie et nous avons du apporter les modifications nécessaires au bon fonctionnement du protocole.
@@ -165,6 +166,7 @@ Ci dessus sont les étapes suivies lors de l'écriture d'un MPDU, ces étapes ut
 \subsection{svPDU}
 Un svPDU représente une \textit{Sample Value}, c'est-à-dire une valeur mesurée par un capteur (dans notre cas l'accéléromètre). Afin d'écrire la valeur dans le MPDU (étape 2 de la séquence de la figure \ref{fig:MPDUSequence}), on vérifie que le beacon réceptionné demande bien les valeurs du groupe dans lequel notre mesure est effectuée. Si le beacon demande cette mesure, on va appeler la méthode \textit{svPublishIndication} de l'application contenue dans le groupe souhaité (ici l'accéléromètre) en lui passant en paramètres un proxy du buffer du MPDU dans lequel cette méthode se chargera d'inscrire ses valeurs (exemple pour notre cas : la méthode \textit{svPublishIndication} dans le fichier \textit{AccelerometerApplication.cpp}). La méthode \textit{commitSv()} permettra ensuite de finaliser l'écriture de cette sample value.
 \subsection{evPDU}
+\label{subsection:evPDU}
 Le deuxième type de valeurs reçues dans ce projet sont les valeurs reçues par évènement. Ces valeurs sont dans notre cas des positions de click sur le Joystick. Pour l'écriture de ces valeurs, le protocole prévoit d'ajouter autant de evPDU qu'il reste de place dans le buffer du MPDU. Lorsque soit la queue d'évènements est vide ou que le MPDU n'a plus de place, le MPDU est prêt à être transmit. Note : S'il reste des évènements dans la queue, celle-ci sera vidée lorsque le MPDU est plein, ceci peut engendrer la perte de certains évènements mais permet également de ne pas "polluer" les prochains timeSlots et ainsi retarder la réception de certains évènements.
 \subsection{Transmission du MPDU}
 Le projet est défini sur un système de Time Slots, c'est-à-dire que chaque station a sa période durant laquelle elle peut transmettre des données au Gateway. Afin de transmettre le MPDU, on utilisera la méthode \textit{onTimeSlotSignal()} de \textit{NetworkEntity}. Dans cette méthode on vérifie que le signal du timeslot correspond bien à un start de notre timeSlot (OWN\_SLOT\_START) puis on appelle 
@@ -221,6 +223,77 @@ La figure \ref{fig:SequenceDiagram} illustre la séquence appliquée lors de la 
     \centering
     \includegraphics[width= 0.8\textwidth]{Images/multipdu.png}
     \caption{Diagramme de séquence détaillé du MPDU}
-    \label{fig:MPDUSequence}
+    \label{fig:MPDUSequenceDetailled}
 \end{figure}
+\chapter{Tests}
+Afin d'effectuer des tests sur le programme nous avions à disposition deux possibilités :
+\begin{enumerate}
+\item Une simulation
+\item Une carte de test avec un Gateway
+\end{enumerate}
+Les tests effectués sont donc les suivants :\\
+\begin{center}
+\begin{tabular}{| p{4cm} | p{3cm} | p{1.2cm} | c | p{3cm} |}
+\hline
+Description & Objectif & Résultat & Preuve & Remarque\\
+\hline
+Flash de la led à la réception du beacon & Contrôler le bon fonctionnement de la réception & OK  & \raisebox{-0.5\totalheight}{\includegraphics[width = 0.3\textwidth]{Images/LedFlash1.png}} & - \\
+\hline
+Affichage d'un message dans la console à la réception du beacon & idem & OK & \raisebox{-0.5\totalheight}{\includegraphics[width = 0.3\textwidth]{Images/beaconMessage.png}} & - \\
+\hline
+Test appui simple (puis relâchement) sur un bouton du joystick pendant le cycle & Vérifier que la queue se remplit bien de deux évènements & OK & \raisebox{-0.5\totalheight}{\includegraphics[width = 0.3\textwidth]{Images/ButtonPress.png}} & ~\ref{subsection:AppuiSimple} \\
+\hline
+Appui continu sans relachement sur un bouton du joystick & Vérifier l'affichage de l'appui sur le bouton dans le testBench & OK & 
+\raisebox{-0.5\totalheight}{\includegraphics[width = 0.3\textwidth]{Images/RightClick1.png}} & 
+~\ref{subsection:AppuiContinu}\\
+\hline
+Appuis multiples sur le joystick & Observer comment la trame est remplie & OK & 
+\raisebox{-0.5\totalheight}{\includegraphics[width = 0.3\textwidth]{Images/MultipleClicks.png}} & ~\ref{subsection:AppuisMultiples}\\
+\hline
+\end{tabular}
+\end{center}
+\newpage
+\begin{center}
+\begin{tabular}{| p{4cm} | p{3cm} | p{1.2cm} | c | p{3cm} |}
+\hline
+Description & Objectif & Résultat & Preuve & Remarque\\
+\hline
+Déplacement de la fenêtre de simulation et modifications des données de l'accéléromètre & Observer le bon fonctionnement de la transmission des données de l'accéléromètre & OK &
+images dans les remarques & ~\ref{subsection:SensorMove} \\
+\hline
+Observation des erreurs dans le test Bench & Vérifier qu'il n'y a pas d'erreurs dans le test bench afin de vérifier que la trame MPDU est bien construite selon les spécifications du protocole & OK &
+\raisebox{-0.5\totalheight}{\includegraphics[width = 0.3\textwidth]{Images/NoErrors.png}} & 
+~\ref{subsection:NoErrors}\\
+\hline
+\end{tabular}
+\end{center}
+\section{Remarques sur les tests}
+\subsection{Test appui simple}
+\label{subsection:AppuiSimple}
+A l'affichage sur le testBench, on ne voit pas la pression sur le bouton car le testBench affiche tous les évènements rapidement et le dernier étant un relachement, nous n'avons pas le temps de voir le clignotement du bouton. Cependant on voit dans la preuve qu'il y a bien eu deux eventData qui correspondent à un appui à droite puis un état sans appui du joystick.
+\subsection{Appui continu}
+\label{subsection:AppuiContinu}
+On observe ici que le testBench affiche bien un appui sur le bouton droit du joystick car le dernier (et seul) évènement reçu correspond à ceci. On observe aussi que l'affichage éteint le bouton au beacon suivant le relâchement du click.
+\subsection{Appuis multiples}
+\label{subsection:AppuisMultiples}
+Ce test permet d'observer qu'il y a bien plusieurs évènements qui peuvent être inscrits dans le MPDU. Cependant, à cause du choix de vider la Queue à la fin de l'écriture du MPDU (voir ~\ref{subsection:evPDU}), s'il y avait trop d'évènements ceux-ci seront perdus.
+\subsubsection{Déplacement de la fenêtre sensor}
+\label{subsection:SensorMove}
+Pour des questions de visibilité dans le tableau, la position initiale ainsi que les valeurs de l'accéléromètre sont disponibles ici :\\
+\begin{figure}[H]
+    \centering
+    \includegraphics[width= 0.8\textwidth]{Images/SensorInitPos.png}
+    \caption{Position initiale du sensor et valeurs d'accéléromètre}
+    \label{fig:SensorInitPos}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width= 0.8\textwidth]{Images/SensorPos2.png}
+    \caption{Position modifiée du sensor et valeurs d'accéléromètre}
+    \label{fig:SensorPos2}
+\end{figure}
+On voit donc bien dans ces images qu'après déplacement de la fenêtre sensor, les valeurs ont changé. Ceci confirme donc le bon fonctionnement du programme.
+\subsubsection{Affichage d'erreurs dans le test bench}
+\label{subsection:NoErrors}
+On voit dans cette figure que le test bench ne présente aucune erreur, cela veut dire, en accordance avec les précédents tests, que la trame MPDU est bien construite (autant pour les svPDU que pour les evPDU) et bien lisible. Les headers sont donc correctement formés et les data bien transmises.
 \end{document}

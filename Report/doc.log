@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.10)  14 JAN 2022 20:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.1.10)  15 JAN 2022 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,6 +1069,24 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip112
+\LTright=\skip113
+\LTpre=\skip114
+\LTpost=\skip115
+\LTchunksize=\count441
+\LTcapwidth=\dimen303
+\LT@head=\box67
+\LT@firsthead=\box68
+\LT@foot=\box69
+\LT@lastfoot=\box70
+\LT@cols=\count442
+\LT@rows=\count443
+\c@LT@tables=\count444
+\c@LT@chunks=\count445
+\LT@p@ftn=\toks45
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1076,14 +1094,10 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count441
-\l__pdf_internal_box=\box67
+\l__kernel_color_stack_int=\count446
+\l__pdf_internal_box=\box71
 )
-(./doc.aux
-
-LaTeX Warning: Label `fig:MPDUSequence' multiply defined.
-
-)
+(./doc.aux)
 \openout1 = `doc.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -1107,7 +1121,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmr on input line 75
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box68
+\AtBeginShipoutBox=\box72
 Package hyperref Info: Link coloring ON on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1119,7 +1133,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count442
+\c@section@level=\count447
 )
 LaTeX Info: Redefining \ref on input line 75.
 LaTeX Info: Redefining \pageref on input line 75.
@@ -1132,17 +1146,17 @@ LaTeX Info: Redefining \nameref on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count443
-\scratchdimen=\dimen303
-\scratchbox=\box69
-\nofMPsegments=\count444
-\nofMParguments=\count445
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count446
-\MPscratchDim=\dimen304
-\MPnumerator=\count447
-\makeMPintoPDFobject=\count448
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count448
+\scratchdimen=\dimen304
+\scratchbox=\box73
+\nofMPsegments=\count449
+\nofMParguments=\count450
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count451
+\MPscratchDim=\dimen305
+\MPnumerator=\count452
+\makeMPintoPDFobject=\count453
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1219,9 +1233,14 @@ No file doc.bbl.
 Package biblatex Info: Reference section=0 on input line 75.
 Package biblatex Info: Reference segment=0 on input line 75.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
 8.
+
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1255,15 +1274,15 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 \tf@toc=\write6
 \openout6 = `doc.toc'.
 
-<./Images/Base/LogoHESSO.png, id=181, 530.98375pt x 319.1925pt>
+<./Images/Base/LogoHESSO.png, id=216, 530.98375pt x 319.1925pt>
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 97.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 96.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
-<./Images/Base/LogoMSE.png, id=183, 507.8975pt x 73.27374pt>
+<./Images/Base/LogoMSE.png, id=218, 507.8975pt x 73.27374pt>
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 97.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 96.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
 
 
@@ -1276,191 +1295,421 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.97 \chapter
-             {Introduction} [1
+l.96 \listoffigures
+                    [1
 
- <./Images/Base/LogoHESSO.png> <./Images/Base/LogoMSE.png>]
-Chapter 1.
+ <./Images/Base/LogoHESSO.png> <./Images/Base/LogoMSE.png>] (./doc.lof)
+\tf@lof=\write7
+\openout7 = `doc.lof'.
+
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 100.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 97.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 100.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 97.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
-[2
+ [2
+
+] (./doc.lot)
+\tf@lot=\write8
+\openout8 = `doc.lot'.
+
+File: ./Images/Base/LogoHESSO.png Graphic file (type png)
+<use ./Images/Base/LogoHESSO.png>
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 98.
+(pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
+File: ./Images/Base/LogoMSE.png Graphic file (type png)
+<use ./Images/Base/LogoMSE.png>
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 98.
+(pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
+ [3
+
+]
+Chapter 1.
+File: ./Images/Base/LogoHESSO.png Graphic file (type png)
+<use ./Images/Base/LogoHESSO.png>
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 101.
+(pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
+File: ./Images/Base/LogoMSE.png Graphic file (type png)
+<use ./Images/Base/LogoMSE.png>
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 101.
+(pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
+[4
 
 ]
 Chapter 2.
-<Images/ClassesToImplement.png, id=198, 1260.71pt x 948.54375pt>
+<Images/ClassesToImplement.png, id=265, 1260.71pt x 948.54375pt>
 File: Images/ClassesToImplement.png Graphic file (type png)
 <use Images/ClassesToImplement.png>
-Package pdftex.def Info: Images/ClassesToImplement.png  used on input line 103.
+Package pdftex.def Info: Images/ClassesToImplement.png  used on input line 104.
 
 (pdftex.def)             Requested size: 354.86412pt x 266.99437pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 119.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 120.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 119.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 120.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
-[3
+[5
 
  <./Images/ClassesToImplement.png>]
 Chapter 3.
-<Images/MPDU.png, id=210, 258.9675pt x 351.3125pt>
+<Images/MPDU.png, id=276, 258.9675pt x 351.3125pt>
 File: Images/MPDU.png Graphic file (type png)
 <use Images/MPDU.png>
-Package pdftex.def Info: Images/MPDU.png  used on input line 123.
+Package pdftex.def Info: Images/MPDU.png  used on input line 124.
 (pdftex.def)             Requested size: 133.07489pt x 180.53395pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-36.
+37.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 141.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 142.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 141.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 142.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
- [4
+ [6
 
  <./Images/MPDU.png (PNG copy)>]
-<Images/MPDUWrite.png, id=219, 231.86626pt x 462.72874pt>
+<Images/MPDUWrite.png, id=285, 231.86626pt x 462.72874pt>
 File: Images/MPDUWrite.png Graphic file (type png)
 <use Images/MPDUWrite.png>
-Package pdftex.def Info: Images/MPDUWrite.png  used on input line 159.
+Package pdftex.def Info: Images/MPDUWrite.png  used on input line 160.
 (pdftex.def)             Requested size: 133.07489pt x 265.57977pt.
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 163.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 164.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 163.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 164.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
 
-[5]
+[7]
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 169.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 171.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 169.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 171.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
- [6 <./Images/MPDUWrite.png>]
-<Images/JoystickApp.png, id=235, 482.80376pt x 300.12125pt>
+ [8 <./Images/MPDUWrite.png>]
+<Images/JoystickApp.png, id=298, 482.80376pt x 300.12125pt>
 File: Images/JoystickApp.png Graphic file (type png)
 <use Images/JoystickApp.png>
-Package pdftex.def Info: Images/JoystickApp.png  used on input line 175.
+Package pdftex.def Info: Images/JoystickApp.png  used on input line 177.
 (pdftex.def)             Requested size: 221.78923pt x 137.86969pt.
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 189.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 191.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 189.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 191.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
- [7 <./Images/JoystickApp.png (PNG copy)>]
-Overfull \hbox (74.861pt too wide) in paragraph at lines 192--193
+ [9 <./Images/JoystickApp.png (PNG copy)>]
+Overfull \hbox (74.861pt too wide) in paragraph at lines 194--195
 \T1/lmr/m/n/10 Cette méth-ode héritée IJoy-stick per-met de générer un évène-me
 nt XF-Re-ac-tive de type \T1/lmr/m/it/10 PO-SI-TION_CHANGED_EVENT
  []
 
-<Images/SMDiagram.png, id=242, 604.2575pt x 278.03876pt>
+<Images/SMDiagram.png, id=305, 604.2575pt x 278.03876pt>
 File: Images/SMDiagram.png Graphic file (type png)
 <use Images/SMDiagram.png>
-Package pdftex.def Info: Images/SMDiagram.png  used on input line 198.
+Package pdftex.def Info: Images/SMDiagram.png  used on input line 200.
 (pdftex.def)             Requested size: 310.50357pt x 142.87125pt.
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 203.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 205.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 203.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 205.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
-[8 <./Images/SMDiagram.png (PNG copy)>]
+[10 <./Images/SMDiagram.png (PNG copy)>]
 Chapter 4.
-<Images/SequenceDiagram.png, id=250, 1075.01625pt x 814.04124pt>
+<Images/SequenceDiagram.png, id=312, 1075.01625pt x 814.04124pt>
 File: Images/SequenceDiagram.png Graphic file (type png)
 <use Images/SequenceDiagram.png>
-Package pdftex.def Info: Images/SequenceDiagram.png  used on input line 206.
+Package pdftex.def Info: Images/SequenceDiagram.png  used on input line 208.
 (pdftex.def)             Requested size: 354.86412pt x 268.70897pt.
-<Images/JoystickSequence.png, id=252, 990.70125pt x 705.63625pt>
+<Images/JoystickSequence.png, id=314, 990.70125pt x 705.63625pt>
 File: Images/JoystickSequence.png Graphic file (type png)
 <use Images/JoystickSequence.png>
-Package pdftex.def Info: Images/JoystickSequence.png  used on input line 215.
+Package pdftex.def Info: Images/JoystickSequence.png  used on input line 217.
 (pdftex.def)             Requested size: 354.86412pt x 252.74756pt.
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 219.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 221.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 219.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 221.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
-[9
+[11
 
  <./Images/SequenceDiagram.png>]
-<Images/multipdu.png, id=260, 1452.42625pt x 1181.41376pt>
+<Images/multipdu.png, id=321, 1452.42625pt x 1181.41376pt>
 File: Images/multipdu.png Graphic file (type png)
 <use Images/multipdu.png>
-Package pdftex.def Info: Images/multipdu.png  used on input line 222.
+Package pdftex.def Info: Images/multipdu.png  used on input line 224.
 (pdftex.def)             Requested size: 354.86412pt x 288.6467pt.
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 226.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 228.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 226.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 228.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
- [10 <./Images/JoystickSequence.png (PNG copy)>] 
+ [12 <./Images/JoystickSequence.png (PNG copy)>]
+File: ./Images/Base/LogoHESSO.png Graphic file (type png)
+<use ./Images/Base/LogoHESSO.png>
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 228.
+(pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
+File: ./Images/Base/LogoMSE.png Graphic file (type png)
+<use ./Images/Base/LogoMSE.png>
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 228.
+(pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
+ [13 <./Images/multipdu.png (PNG copy)>]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+
+Overfull \hbox (2.71803pt too wide) in paragraph at lines 238--238
+[]\T1/lmr/m/n/10 Résultat| 
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 240--240
+[]\T1/lmr/m/n/10 Contrôler le bon
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 240--240
+\T1/lmr/m/n/10 fonc-tion-nement de
+ []
+
+<Images/LedFlash1.png, id=333, 292.09125pt x 228.855pt>
+File: Images/LedFlash1.png Graphic file (type png)
+<use Images/LedFlash1.png>
+Package pdftex.def Info: Images/LedFlash1.png  used on input line 240.
+(pdftex.def)             Requested size: 133.07489pt x 104.26886pt.
+
+Underfull \hbox (badness 5374) in paragraph at lines 242--242
+[]\T1/lmr/m/n/10 Affichage d'un mes-sage
+ []
+
+<Images/beaconMessage.png, id=334, 350.30875pt x 122.4575pt>
+File: Images/beaconMessage.png Graphic file (type png)
+<use Images/beaconMessage.png>
+Package pdftex.def Info: Images/beaconMessage.png  used on input line 242.
+(pdftex.def)             Requested size: 133.07489pt x 46.51938pt.
+
+Underfull \hbox (badness 1107) in paragraph at lines 244--244
+[]\T1/lmr/m/n/10 Test ap-pui sim-ple (puis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]\T1/lmr/m/n/10 Vérifier que la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+\T1/lmr/m/n/10 queue se rem-
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 244--244
+\T1/lmr/m/n/10 plit bien de deux
+ []
+
+<Images/ButtonPress.png, id=335, 351.3125pt x 97.36375pt>
+File: Images/ButtonPress.png Graphic file (type png)
+<use Images/ButtonPress.png>
+Package pdftex.def Info: Images/ButtonPress.png  used on input line 244.
+(pdftex.def)             Requested size: 133.07489pt x 36.88123pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+[]\T1/lmr/m/n/10 Appui con-tinu sans
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T1/lmr/m/n/10 relache-ment sur un
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 246--246
+[]\T1/lmr/m/n/10 Vérifier l'affichage
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 246--246
+\T1/lmr/m/n/10 de l'appui sur le
+ []
+
+<Images/RightClick1.png, id=337, 326.21875pt x 59.22125pt>
+File: Images/RightClick1.png Graphic file (type png)
+<use Images/RightClick1.png>
+Package pdftex.def Info: Images/RightClick1.png  used on input line 247.
+(pdftex.def)             Requested size: 133.07489pt x 24.15886pt.
+
+Underfull \hbox (badness 1558) in paragraph at lines 250--250
+[]\T1/lmr/m/n/10 Appuis mul-ti-ples sur le
+ []
+
+<Images/MultipleClicks.png, id=339, 347.2975pt x 251.94125pt>
+File: Images/MultipleClicks.png Graphic file (type png)
+<use Images/MultipleClicks.png>
+Package pdftex.def Info: Images/MultipleClicks.png  used on input line 251.
+(pdftex.def)             Requested size: 133.07489pt x 96.53828pt.
+
+Overfull \hbox (68.16719pt too wide) in paragraph at lines 236--254
+ [] 
+ []
+
+File: ./Images/Base/LogoHESSO.png Graphic file (type png)
+<use ./Images/Base/LogoHESSO.png>
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 255.
+(pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
+File: ./Images/Base/LogoMSE.png Graphic file (type png)
+<use ./Images/Base/LogoMSE.png>
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 255.
+(pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
+[14
+
+ <./Images/LedFlash1.png> <./Images/beaconMessage.png> <./Images/ButtonPress.pn
+g> <./Images/RightClick1.png> <./Images/MultipleClicks.png>]
+Overfull \hbox (2.71803pt too wide) in paragraph at lines 259--259
+[]\T1/lmr/m/n/10 Résultat| 
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 261--261
+\T1/lmr/m/n/10 ca-tions des don-nées de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+[]\T1/lmr/m/n/10 Observer le bon
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+\T1/lmr/m/n/10 fonc-tion-nement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
+\T1/lmr/m/n/10 des don-nées de
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 264--264
+[]\T1/lmr/m/n/10 Observation des er-reurs
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 264--264
+\T1/lmr/m/n/10 de véri-fier que la
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 264--264
+\T1/lmr/m/n/10 trame MPDU est
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+\T1/lmr/m/n/10 bien con-stru-ite
+ []
+
+<Images/NoErrors.png, id=354, 961.5925pt x 256.96pt>
+File: Images/NoErrors.png Graphic file (type png)
+<use Images/NoErrors.png>
+Package pdftex.def Info: Images/NoErrors.png  used on input line 265.
+(pdftex.def)             Requested size: 133.07489pt x 35.55853pt.
+
+Overfull \hbox (68.16719pt too wide) in paragraph at lines 257--269
+ [] 
+ []
+
+<Images/SensorInitPos.png, id=357, 966.61125pt x 490.83376pt>
+File: Images/SensorInitPos.png Graphic file (type png)
+<use Images/SensorInitPos.png>
+Package pdftex.def Info: Images/SensorInitPos.png  used on input line 285.
+(pdftex.def)             Requested size: 354.86412pt x 180.19762pt.
+
+Overfull \hbox (1.28355pt too wide) in paragraph at lines 282--288
+\T1/lmr/m/n/10 Pour des ques-tions de vis-i-bil-ité dans le tableau, la po-si-t
+ion ini-tiale ainsi que les valeurs de l'accéléromètre
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--288
+
+ []
+
+<Images/SensorPos2.png, id=358, 959.585pt x 489.83pt>
+File: Images/SensorPos2.png Graphic file (type png)
+<use Images/SensorPos2.png>
+Package pdftex.def Info: Images/SensorPos2.png  used on input line 291.
+(pdftex.def)             Requested size: 354.86412pt x 181.14456pt.
+File: ./Images/Base/LogoHESSO.png Graphic file (type png)
+<use ./Images/Base/LogoHESSO.png>
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 294.
+(pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
+File: ./Images/Base/LogoMSE.png Graphic file (type png)
+<use ./Images/Base/LogoMSE.png>
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 294.
+(pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
+[15 <./Images/NoErrors.png>] 
 AED: lastpage setting LastPage
 File: ./Images/Base/LogoHESSO.png Graphic file (type png)
 <use ./Images/Base/LogoHESSO.png>
-Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 226.
+Package pdftex.def Info: ./Images/Base/LogoHESSO.png  used on input line 299.
 (pdftex.def)             Requested size: 106.19485pt x 63.83736pt.
 File: ./Images/Base/LogoMSE.png Graphic file (type png)
 <use ./Images/Base/LogoMSE.png>
-Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 226.
+Package pdftex.def Info: ./Images/Base/LogoMSE.png  used on input line 299.
 (pdftex.def)             Requested size: 152.37042pt x 21.98228pt.
-[11 <./Images/multipdu.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
+[16 <./Images/SensorInitPos.png> <./Images/SensorPos2.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 299.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 299.
  (./doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 299.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 299.
 Package rerunfilecheck Info: File `doc.out' has not changed.
-(rerunfilecheck)             Checksum: 7E2FEA1F70A7B2C1B6646E87470C36D7;2537.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 8A740A72F9C531712E174F62CFE16D3A;3060.
 Package logreq Info: Writing requests to 'doc.run.xml'.
 \openout1 = `doc.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 299.
  ) 
 Here is how much of TeX's memory you used:
- 28850 strings out of 481239
- 533122 string characters out of 5920377
- 1198926 words of memory out of 5000000
- 43514 multiletter control sequences out of 15000+600000
+ 29066 strings out of 481239
+ 536565 string characters out of 5920377
+ 1202311 words of memory out of 5000000
+ 43692 multiletter control sequences out of 15000+600000
  578744 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,17n,96p,929b,1680s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1469,10 +1718,10 @@ vips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/shar
 e/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmri10.pfb>
-Output written on doc.pdf (12 pages, 550840 bytes).
+Output written on doc.pdf (17 pages, 865967 bytes).
 PDF statistics:
- 308 PDF objects out of 1000 (max. 8388607)
- 271 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 327 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 412 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 423 words of extra memory for PDF output out of 10000 (max. 10000000)
 
