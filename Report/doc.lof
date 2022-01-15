@@ -5,28 +5,34 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Aperçu des modifications à apporter\relax }}{5}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Aperçu des modifications à apporter\relax }}{6}{figure.caption.4}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagramme de la classe MPDU\relax }}{6}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagramme de la classe MPDU\relax }}{7}{figure.caption.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Séquence d'écriture du MPDU\relax }}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Séquence d'écriture du MPDU\relax }}{9}{figure.caption.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces JoystickApplication UML Diagram\relax }}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces JoystickApplication UML Diagram\relax }}{10}{figure.caption.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces JoystickApplication machine d'état\relax }}{10}{figure.caption.8}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagramme de séquence générique de l'application\relax }}{11}{figure.caption.9}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme de séquence détaillé du joystick\relax }}{12}{figure.caption.10}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagramme de séquence détaillé du MPDU\relax }}{13}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces JoystickApplication machine d'état\relax }}{11}{figure.caption.8}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Position initiale du sensor et valeurs d'accéléromètre\relax }}{16}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagramme de séquence générique de l'application\relax }}{12}{figure.caption.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Position modifiée du sensor et valeurs d'accéléromètre\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme de séquence détaillé du joystick\relax }}{13}{figure.caption.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diagramme de séquence détaillé du MPDU\relax }}{14}{figure.caption.11}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Position initiale du sensor et valeurs d'accéléromètre\relax }}{17}{figure.caption.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Position modifiée du sensor et valeurs d'accéléromètre\relax }}{17}{figure.caption.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Frames générées par le programme dévelopé\relax }}{18}{figure.caption.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Frames générées par le sensor de démo\relax }}{18}{figure.caption.15}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }

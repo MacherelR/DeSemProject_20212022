@@ -1,82 +1,88 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Modifications du code}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Modifications du code}{6}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Classes implémentées}{6}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Classes implémentées}{7}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}MPDU}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.1}MPDU}{7}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Méthodes implémentées}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.1}Méthodes implémentées}{7}{subsection.3.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.1}MPDU()}{6}{subsubsection.3.1.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.1.1}MPDU()}{7}{subsubsection.3.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.2}getEPDUCount()}{6}{subsubsection.3.1.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.1.2}getEPDUCount()}{7}{subsubsection.3.1.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.3}commitSv(SvGroup,uint8\_t)}{6}{subsubsection.3.1.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.1.3}commitSv(SvGroup,uint8\_t)}{7}{subsubsection.3.1.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.4}commitEv(EvId,uint8\_t)}{7}{subsubsection.3.1.1.4}%
+\contentsline {subsubsection}{\numberline {3.1.1.4}commitEv(EvId,uint8\_t)}{8}{subsubsection.3.1.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.5}insertBuffer()}{7}{subsubsection.3.1.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.1.5}insertBuffer()}{8}{subsubsection.3.1.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.6}reset()}{7}{subsubsection.3.1.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.1.6}reset()}{8}{subsubsection.3.1.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.7}setEPDUCount()}{7}{subsubsection.3.1.1.7}%
+\contentsline {subsubsection}{\numberline {3.1.1.7}setEPDUCount()}{8}{subsubsection.3.1.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.8}getBuffer()}{7}{subsubsection.3.1.1.8}%
+\contentsline {subsubsection}{\numberline {3.1.1.8}getBuffer()}{8}{subsubsection.3.1.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.9}getRemainingSpace()}{7}{subsubsection.3.1.1.9}%
+\contentsline {subsubsection}{\numberline {3.1.1.9}getRemainingSpace()}{8}{subsubsection.3.1.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.1.1.10}evPDUWrite(SharedByteBuffer}{7}{subsubsection.3.1.1.10}%
+\contentsline {subsubsection}{\numberline {3.1.1.10}evPDUWrite(SharedByteBuffer}{8}{subsubsection.3.1.1.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Séquence générique d'écriture d'un MPDU}{8}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Séquence générique d'écriture d'un MPDU}{9}{subsection.3.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}svPDU}{8}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}svPDU}{9}{subsection.3.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}evPDU}{8}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.4}evPDU}{9}{subsection.3.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.5}Transmission du MPDU}{9}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.5}Transmission du MPDU}{10}{subsection.3.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}JoystickApplication}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.2}JoystickApplication}{10}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Propriétés}{9}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Propriétés}{10}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Méthodes implémentées}{9}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Méthodes implémentées}{10}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.1}JoystickApplication()}{9}{subsubsection.3.2.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}JoystickApplication()}{10}{subsubsection.3.2.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.2}start()}{9}{subsubsection.3.2.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.2}start()}{10}{subsubsection.3.2.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.3}processEvent()}{10}{subsubsection.3.2.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.2.3}processEvent()}{11}{subsubsection.3.2.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.4}joystick()}{10}{subsubsection.3.2.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.2.4}joystick()}{11}{subsubsection.3.2.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.5}onPositionChanged(IJoystick::Position)}{10}{subsubsection.3.2.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.2.5}onPositionChanged(IJoystick::Position)}{11}{subsubsection.3.2.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {3.2.2.6}\_readJoystickValue()}{10}{subsubsection.3.2.2.6}%
+\contentsline {subsubsection}{\numberline {3.2.2.6}\_readJoystickValue()}{11}{subsubsection.3.2.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Machine d'état}{10}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Machine d'état}{11}{subsection.3.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Diagramme de séquence de l'application}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Diagramme de séquence de l'application}{12}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Diagrammes de séquence détaillés}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Diagrammes de séquence détaillés}{13}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Joystick}{12}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.1}Joystick}{13}{subsection.4.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {4.1.1.1}Création et écriture MPDU}{13}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Création et écriture MPDU}{14}{subsubsection.4.1.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Tests}{14}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Tests}{15}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Remarques sur les tests}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Remarques sur les tests}{16}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Test appui simple}{15}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}Test appui simple}{16}{subsection.5.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Appui continu}{15}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.2}Appui continu}{16}{subsection.5.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Appuis multiples}{15}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.3}Appuis multiples}{16}{subsection.5.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.1}Déplacement de la fenêtre sensor}{15}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}Déplacement de la fenêtre sensor}{17}{subsubsection.5.1.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {5.1.3.2}Affichage d'erreurs dans le test bench}{16}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}Affichage d'erreurs dans le test bench}{17}{subsubsection.5.1.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.3.3}Déplacements rapides du sensor}{18}{subsubsection.5.1.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.3.4}Comparaison des frames entre mon programme et le sensor de démo}{18}{subsubsection.5.1.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion}{19}{chapter.6}%

@@ -265,8 +265,13 @@ Observation des erreurs dans le test Bench & Vérifier qu'il n'y a pas d'erreurs
 \raisebox{-0.5\totalheight}{\includegraphics[width = 0.3\textwidth]{Images/NoErrors.png}} & 
 ~\ref{subsection:NoErrors}\\
 \hline
+Déplacement rapide du sensor & Observer si la lecture des valeurs du sensor est au bon moment & OK & - & ~\ref{subsubsection:FastMoves}\\
+\hline
+Comparaison de frames entre le sensor de démo et mon programme & Vérifier la justesse des frame transmises par mon programme & OK & voir remarques & ~\ref{subsubsection:Comparing}\\
+\hline
 \end{tabular}
 \end{center}
+Les mêmes tests ont été effectués sur la board distribuée en cours avec l'aide du Gateway également distribués et les résultats se sont avérés identiques. La seule différence fût qu'avec les tests physiques il arrivait parfois que le timeSlot ne soit pas parfaitement respecté. J'en ai tiré pour conclusion que cela pouvait être dû à d'éventuelles perturbations sur le wifi ou des problèmes de temps de calcul sur les diverses stations.
 \section{Remarques sur les tests}
 \subsection{Test appui simple}
 \label{subsection:AppuiSimple}
@@ -296,4 +301,25 @@ On voit donc bien dans ces images qu'après déplacement de la fenêtre sensor, 
 \subsubsection{Affichage d'erreurs dans le test bench}
 \label{subsection:NoErrors}
 On voit dans cette figure que le test bench ne présente aucune erreur, cela veut dire, en accordance avec les précédents tests, que la trame MPDU est bien construite (autant pour les svPDU que pour les evPDU) et bien lisible. Les headers sont donc correctement formés et les data bien transmises.
+\subsubsection{Déplacements rapides du sensor}
+\label{subsubsection:FastMoves}
+J'ai pu observer que si après le timeslot on déplace le sensor puis toujours avant le prochain beacon on le remet en place la valeur transmise ne change pas. C'est pour moi un comportement correct car les valeurs sont lues et transmises à l'arrivée du beacon.
+\subsubsection{Comparaison des frames entre mon programme et le sensor de démo}
+\label{subsubsection:Comparing}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width= 0.8\textwidth]{Images/OwnFrame.png}
+    \caption{Frames générées par le programme dévelopé}
+    \label{fig:OwnFrames}
+\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width= 0.8\textwidth]{Images/DemoFrames.png}
+    \caption{Frames générées par le sensor de démo}
+    \label{fig:DemoFrames}
+\end{figure}
+On peut vérifier à l'aide de ces figures le bon remplissage des frame du MPDU car les tailles sont identiques entre les valeurs transmises par le sensor de démo et celles transmises par mon programme. La seule différence ici est au niveau des valeurs transmises car en réalisant ce test avec la simulation, les deux fenêtre de sensor ne se trouvaient pas au même endroit et donc les valeurs d'accéléromètre étaient différentes.
+\chapter{Conclusion}
+En conclusion, le programme est fonctionnel et permet bien de remplir les MPDU, ainsi que de les transmettre à la station principale en respectant les spécifications du protocole DeseNET. Les majeures difficultés ont été pour ma part de bien rentrer dans le protocole et d'en comprendre tous les fonctionnements. La classe MPDU a donc été la plus complexe à réaliser mais une fois ceci compris, la suite s'est bien déroulé et lors de l'implémentation sur la carte STM, je n'ai rencontré aucun problème et le système semblait toujours fonctionner. Comme cité ci-dessus, les seuls défauts de fonctionnement rencontrés furent parfois le timeSlot qui n'était pas parfaitement respecté ou des petits problèmes matériels comme par exemple des rebonds sur les boutons du joystick qui généraient donc parfois une légère perte d'informations. \\
+Le choix de vider la queue d'évènement est un choix personnel qui fut pris en discutant avec certains de mes camarades. En effet, nous avons jugé plus important de transmettre uniquement les données générées durant le time slot plutôt que de garder indéfiniment et provoquer des potentiels retards dans la transmission d'informations. Par exemple, si la queue est maintenue, des informations générées durant un timeslot pourraient n'être transmises uniquement 2 timeslot plus tard.
 \end{document}
